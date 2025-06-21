@@ -1,0 +1,322 @@
+/* Main container for the page */
+.q-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header section */
+.q-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.q-ask-button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.q-ask-button:hover {
+  background-color: #0b5ed7;
+}
+
+.q-welcome-text {
+  color: #dc3545;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Search bar */
+.q-search-container {
+  margin-bottom: 2rem;
+}
+
+.q-search-input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.q-search-input::placeholder {
+  color: #6c757d;
+}
+
+/* Question list styles */
+.q-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.q-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.q-item:last-child {
+  border-bottom: none;
+}
+
+.q-item:hover {
+  background-color: #f5f5f5;
+}
+
+.q-item-main {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.q-user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.q-user-name {
+  font-weight: 500;
+  color: #424242;
+}
+
+.q-title {
+  font-size: 1.25rem;
+  color: #212121;
+  font-weight: 500;
+}
+
+/* Footer section */
+.q-footer {
+  background-color: #3b4a6b;
+  color: white;
+  padding: 3rem 2rem;
+  margin-top: 4rem;
+}
+
+.q-footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.q-footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.q-footer-logo .social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.q-footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.q-footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.q-footer-column li {
+  margin-bottom: 0.75rem;
+}
+
+.q-footer-column a,
+.q-footer-column p {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.q-footer-column a:hover {
+  color: white;
+}
+
+/* Main wrapper for the Ask Question page */
+.q-page-wrapper {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* Steps to write a good question section */
+.q-steps-container {
+  background: transparent;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.q-steps-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #222;
+}
+
+.q-steps-list {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  color: #222;
+  line-height: 2;
+}
+
+/* Ask a public question form container */
+.q-form-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(60, 60, 60, 0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.q-form-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+  text-align: center;
+}
+
+.q-form-link {
+  color: #222;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.q-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.q-form-input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background: #fafbfc;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.q-form-input:focus {
+  border: 1.5px solid #4f8cff;
+}
+
+.q-form-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background: #fafbfc;
+  resize: vertical;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.q-form-textarea:focus {
+  border: 1.5px solid #4f8cff;
+}
+
+.q-form-button {
+  width: 180px;
+  align-self: flex-start;
+  background: #4f8cff;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 0;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.q-form-button:hover {
+  background: #2563eb;
+}
+
+/* Remove unused/question list/search styles for this page */
+.q-container,
+.q-header,
+.q-ask-button,
+.q-search-container,
+.q-search-input,
+.q-list,
+.q-item,
+.q-item-main,
+.q-user-info,
+.q-user-name,
+.q-title {
+  display: none !important;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .q-form-container {
+    max-width: 98vw;
+    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+  }
+  .q-steps-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .q-page-wrapper {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .q-form-container {
+    padding: 1rem 0.2rem 1rem 0.2rem;
+  }
+  .q-form-title {
+    font-size: 1.1rem;
+  }
+}
